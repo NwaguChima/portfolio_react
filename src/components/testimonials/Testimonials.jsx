@@ -6,6 +6,37 @@ import AVTR4 from '../../assets/avatar4.jpg';
 
 import './testimonials.css';
 
+const testimonialData = [
+  {
+    id: 1,
+    avatar: AVTR1,
+    name: 'Ernest Achiever',
+    review:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos, blanditiis necessitatibus dolores facilis hic nesciunt labore dolore, aliquam optio, harum alias.',
+  },
+  {
+    id: 2,
+    avatar: AVTR2,
+    name: 'Emmanuel Fortmeinor',
+    review:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos, blanditiis necessitatibus dolores facilis hic nesciunt labore dolore, aliquam optio, harum alias.',
+  },
+  {
+    id: 3,
+    avatar: AVTR3,
+    name: 'Joseph Escravos',
+    review:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos, blanditiis necessitatibus dolores facilis hic nesciunt labore dolore, aliquam optio, harum alias.',
+  },
+  {
+    id: 4,
+    avatar: AVTR4,
+    name: 'Peter Oyibo',
+    review:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos, blanditiis necessitatibus dolores facilis hic nesciunt labore dolore, aliquam optio, harum alias.',
+  },
+];
+
 const Testimonials = () => {
   return (
     <section id="testimonials">
@@ -13,57 +44,15 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <div className="container testimonials__container">
-        <article className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="Avatar One" />
-          </div>
-          <h5 className="client__name">Ernest Achiever</h5>
-          <small className="client__review">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos,
-            blanditiis necessitatibus dolores facilis hic nesciunt labore
-            dolore, aliquam optio, harum alias.
-          </small>
-        </article>
-
-        <article className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="Avatar One" />
-          </div>
-          <h5 className="client__name">Ernest Achiever</h5>
-          <small className="client__review">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos,
-            blanditiis necessitatibus dolores facilis hic nesciunt labore
-            dolore, aliquam optio, harum alias.
-          </small>
-        </article>
-
-        <article className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="Avatar One" />
-          </div>
-          <h5 className="client__name">Ernest Achiever</h5>
-          <small className="client__review">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos,
-            blanditiis necessitatibus dolores facilis hic nesciunt labore
-            dolore, aliquam optio, harum alias.
-          </small>
-        </article>
-
-        <article className="testimonial">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="Avatar One" />
-          </div>
-          <h5 className="client__name">Ernest Achiever</h5>
-          <small className="client__review">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            asperiores neque fuga necessitatibus corporis dolor. Dolor fuga eos,
-            blanditiis necessitatibus dolores facilis hic nesciunt labore
-            dolore, aliquam optio, harum alias.
-          </small>
-        </article>
+        {testimonialData.map((testimonial) => (
+          <article className="testimonial" key={testimonial.id}>
+            <div className="client__avatar">
+              <img src={testimonial.avatar} alt="Avatar One" />
+            </div>
+            <h5 className="client__name">{testimonial.name}</h5>
+            <small className="client__review">{testimonial.review}</small>
+          </article>
+        ))}
       </div>
     </section>
   );
