@@ -58,6 +58,12 @@ const Footer = () => {
           <FaFacebookF />
         </a>
       </div>
+
+      <div className="footer__copyright">
+        <small>
+          &copy; {new Date().getFullYear()} Chima Nwagu. All rights reserved.
+        </small>
+      </div>
     </footer>
   );
 };
