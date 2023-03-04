@@ -6,6 +6,14 @@ import AVTR4 from '../../assets/avatar4.jpg';
 
 import './testimonials.css';
 
+// import Swiper core and required modules
+import { Pagination, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 const testimonialData = [
   {
     id: 1,
@@ -43,17 +51,24 @@ const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials__container">
+      <Swiper
+        className="container testimonials__container"
+        modules={[Pagination, A11y]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+      >
         {testimonialData.map((testimonial) => (
-          <article className="testimonial" key={testimonial.id}>
+          <SwiperSlide className="testimonial" key={testimonial.id}>
             <div className="client__avatar">
               <img src={testimonial.avatar} alt="Avatar One" />
             </div>
             <h5 className="client__name">{testimonial.name}</h5>
             <small className="client__review">{testimonial.review}</small>
-          </article>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };
