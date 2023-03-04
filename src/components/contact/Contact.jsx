@@ -1,14 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { MdOutlineMailOutline, MdWhatsapp } from 'react-icons/md';
 import { IoLogoLinkedin } from 'react-icons/io5';
+import { toast } from 'react-toastify';
 import emailjs from 'emailjs-com';
 
 import './contact.css';
+import BtnLoader from './BtnLoader';
 
 const Contact = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
+    setLoading(true);
     e.preventDefault();
 
     emailjs
@@ -20,14 +24,39 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          toast.success(`Message successfully sent!`, {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+            style: {
+              color: '#4db5ff',
+              background: '#2c2c6c',
+              fontSize: '1rem',
+            },
+          });
         },
         (error) => {
-          console.log(error.text);
+          console.error('Error Log', error.text);
+          toast.error(`Message not sent`, {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         }
-      );
-
-    e.target.reset();
+      )
+      .finally(() => {
+        form.current.reset();
+        setLoading(false);
+      });
   };
 
   return (
@@ -93,8 +122,13 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
+          <button
+            type="submit"
+            className="btn btn-primary contact-btn"
+            disabled={loading}
+          >
+            <span>{loading ? 'Sending...' : 'Send Message'}</span>
+            <BtnLoader loading={loading} />
           </button>
         </form>
       </div>
