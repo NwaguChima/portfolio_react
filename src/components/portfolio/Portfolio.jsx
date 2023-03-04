@@ -7,6 +7,51 @@ import IMG4 from '../../assets/portfolio4.jpg';
 import IMG5 from '../../assets/portfolio5.png';
 import IMG6 from '../../assets/portfolio6.jpg';
 
+const PortfolioData = [
+  {
+    id: 1,
+    image: IMG1,
+    title: 'This is a portfolio title of my first project',
+    github: 'https://github.com/nwaguchima',
+    demo: 'https://github.com/nwaguchima',
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'This is a portfolio title of my second project',
+    github: 'https://github.com/nwaguchima',
+    demo: 'https://github.com/nwaguchima',
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: 'This is a portfolio title of my third project',
+    github: 'https://github.com/nwaguchima',
+    demo: 'https://github.com/nwaguchima',
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'This is a portfolio title of my fourth project',
+    github: 'https://github.com/nwaguchima',
+    demo: 'https://github.com/nwaguchima',
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: 'This is a portfolio title of my fifth project',
+    github: 'https://github.com/nwaguchima',
+    demo: 'https://github.com/nwaguchima',
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: 'This is a portfolio title of my sixth project',
+    github: 'https://github.com/nwaguchima',
+    demo: 'https://github.com/nwaguchima',
+  },
+];
+
 const Portfolio = () => {
   return (
     <section id="portfolio">
