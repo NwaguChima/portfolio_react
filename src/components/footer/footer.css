@@ -21,7 +21,7 @@ footer a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
 }
 
 .permalinks > *:not(:last-child) {
@@ -31,7 +31,7 @@ footer a {
 .footer__socials {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .footer__socials > *:not(:last-child) {
@@ -50,4 +50,31 @@ footer a {
   -moz-border-radius: 0.7rem;
   -ms-border-radius: 0.7rem;
   -o-border-radius: 0.7rem;
+}
+
+.footer__socials a:hover {
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+}
+
+.footer__copyright {
+  margin-bottom: 4rem;
+  color: var(--color-bg);
+}
+
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .permalinks > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__socials {
+    margin-bottom: 2.6rem;
+  }
 }
