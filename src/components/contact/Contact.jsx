@@ -34,8 +34,8 @@ const Contact = () => {
 
           <article className="contact__option">
             <MdWhatsapp className="contact__icon" />
-            <h4>Whatsapp</h4>
-            <h5></h5>
+            <h4>Whatsapp / Phone</h4>
+            <h5>+234 90 3188 9190</h5>
             <a
               href="https://wa.me/+2349031889190"
               target={'_blank'}
@@ -46,7 +46,32 @@ const Contact = () => {
           </article>
         </div>
 
-        <form action=""></form>
+        <form action="">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            rows="7"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   );
