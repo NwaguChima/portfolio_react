@@ -25,6 +25,7 @@
 
 .about__me-image {
   overflow: hidden;
+  height: 25rem;
 
   border-radius: 2rem;
   -webkit-border-radius: 2rem;

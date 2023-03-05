@@ -8,8 +8,8 @@ import './about.css';
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      {/* <h5>Get To Know</h5>
+      <h2>About Me</h2> */}
 
       <div className="container about__container">
         <div className="about__me">
@@ -40,7 +40,7 @@ const About = () => {
           </div>
 
           <p>
-            Experienced front-end developer with a strong portfolio of creating
+            Experienced Software Engineer with a strong portfolio of creating
             visually appealing and user-friendly websites and web applications.
             Proficient in HTML, CSS, JavaScript and popular front-end frameworks
             such as React and React Native. I also have experience with Nodejs
@@ -52,9 +52,9 @@ const About = () => {
             to create engaging and high-quality user experiences.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
+          {/* <a href="#contact" className="btn btn-primary">
             Let's Talk
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
