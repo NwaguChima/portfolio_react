@@ -70,7 +70,7 @@
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 
   transition: var(--transition);
@@ -104,6 +104,7 @@
 .about__content p {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+  text-align: justify;
 }
 
 @media screen and (max-width: 1024px) {

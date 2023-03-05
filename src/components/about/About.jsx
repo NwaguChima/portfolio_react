@@ -43,13 +43,14 @@ const About = () => {
             Experienced Software Engineer with a strong portfolio of creating
             visually appealing and user-friendly websites and web applications.
             Proficient in HTML, CSS, JavaScript and popular front-end frameworks
-            such as React and React Native. I also have experience with Nodejs
-            and Python. Strong understanding of responsive design, cross-browser
-            compatibility, and web performance optimization. Proven ability to
-            work collaboratively with designers, developers, and stakeholders to
-            deliver projects on-time and within budget. Dedicated to staying
-            current with industry developments and continuously improving skills
-            to create engaging and high-quality user experiences.
+            such as React, Nextjs and React Native. I also have experience with
+            Nodejs and Python. Strong understanding of responsive design,
+            cross-browser compatibility, and web performance optimization.
+            Proven ability to work collaboratively with designers, developers,
+            and stakeholders to deliver projects on-time and within budget.
+            Dedicated to staying current with industry developments and
+            continuously improving skills to create engaging and high-quality
+            user experiences.
           </p>
 
           {/* <a href="#contact" className="btn btn-primary">
