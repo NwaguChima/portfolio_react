@@ -1,6 +1,5 @@
 import React from 'react';
 import Me from '../../assets/me2.jpg';
-// import Me from '../../assets/me-about.jpg';
 import { FaAward, FaFolderOpen } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import './about.css';
