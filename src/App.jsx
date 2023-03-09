@@ -23,7 +23,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
-      {/* toast notification setup */}
+      {/* toast notification setup --*/}
       <ToastContainer
         position="top-right"
         autoClose={5000}
