@@ -1,6 +1,5 @@
 import React from 'react';
-import Me from '../../assets/me.jpg';
-// import Me from '../../assets/me-about.jpg';
+import Me from '../../assets/me2.jpg';
 import { FaAward, FaFolderOpen } from 'react-icons/fa';
 import { FiUsers } from 'react-icons/fi';
 import './about.css';
@@ -8,9 +7,6 @@ import './about.css';
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
-
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -40,21 +36,18 @@ const About = () => {
           </div>
 
           <p>
-            Experienced front-end developer with a strong portfolio of creating
+            Experienced Software Engineer with a strong portfolio of creating
             visually appealing and user-friendly websites and web applications.
             Proficient in HTML, CSS, JavaScript and popular front-end frameworks
-            such as React and React Native. I also have experience with Nodejs
-            and Python. Strong understanding of responsive design, cross-browser
-            compatibility, and web performance optimization. Proven ability to
-            work collaboratively with designers, developers, and stakeholders to
-            deliver projects on-time and within budget. Dedicated to staying
-            current with industry developments and continuously improving skills
-            to create engaging and high-quality user experiences.
+            such as React, Nextjs and React Native. I also have experience with
+            Nodejs and Python. Strong understanding of responsive design,
+            cross-browser compatibility, and web performance optimization.
+            Proven ability to work collaboratively with designers, developers,
+            and stakeholders to deliver projects on-time and within budget.
+            Dedicated to staying current with industry developments and
+            continuously improving skills to create engaging and high-quality
+            user experiences.
           </p>
-
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
         </div>
       </div>
     </section>
