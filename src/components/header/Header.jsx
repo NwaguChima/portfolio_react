@@ -3,7 +3,6 @@ import CTA from './CTA';
 import './header.css';
 import HeaderSocials from './HeaderSocials';
 
-// header component
 const Header = () => {
   return (
     <header>
