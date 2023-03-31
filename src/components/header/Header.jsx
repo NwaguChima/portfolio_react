@@ -15,6 +15,7 @@ const Header = () => {
 
         <a href="#contact" className="scroll__down">
           Scroll Down
+          {/* bottom of page */}
         </a>
       </div>
     </header>
