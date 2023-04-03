@@ -3,7 +3,6 @@ import CTA from './CTA';
 import './header.css';
 import HeaderSocials from './HeaderSocials';
 
-// header component
 const Header = () => {
   return (
     <header>
@@ -16,6 +15,7 @@ const Header = () => {
 
         <a href="#contact" className="scroll__down">
           Scroll Down
+          {/* bottom of page */}
         </a>
       </div>
     </header>
